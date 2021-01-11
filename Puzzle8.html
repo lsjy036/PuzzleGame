@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+        <link rel="stylesheet" href="Puzzle.css">
+        <script src="Puzzle.js" charset="utf-8"></script>
+    </head>
+    <body onkeyup="moveBykeyBoard(event)">
+        <div id="left">
+            <p id="timer">计时：0 分 0 秒</p>
+            <button id="begin" onclick="start()">开始</button>
+        </div>
+        <div id="center">
+            <table>
+                <tbody id="picbox">
+                </tbody>
+            </table>
+
+
+        </div>
+        <div id="right">
+            <p>请输入数字n:</p>
+            <input id="inputnum" placeholder="2<n<10"/>
+            <button id="reset" onclick="innit()">重置</button>
+            <p id="Wins"></p>
+
+        </div>
+    </body>
+</html>
